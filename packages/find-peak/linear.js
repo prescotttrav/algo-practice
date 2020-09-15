@@ -6,12 +6,13 @@
  */
 const findPeak = (A) => {
   for (let i = 0; i < A.length; i++) {
-    if (i > 0 && A[i - 1] > A[i]) {
-      continue;
-    } else if (i < A.length - 1 && A[i + 1] > A[i]) {
-      continue;
+    if (i === 0 && A[i] >= A[i + 1]) {
+      return i;
+    } else if (i === A.length - 1 && A[i] >= A[i - 1]) {
+      return i;
+    } else if (A[i - 1] <= A[i] && A[i + 1] <= A[i]) {
+      return i;
     }
-    return i;
   }
   return -1;
 }
