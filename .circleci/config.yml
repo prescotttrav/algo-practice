@@ -4,6 +4,7 @@ jobs:
       - image: cimg/node:14.10.1
     steps:
       - checkout
+      - node/install-packages
       - run:
           command: npm test
           name: Run tests
