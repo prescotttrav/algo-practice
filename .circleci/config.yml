@@ -4,10 +4,9 @@ jobs:
       - image: cimg/node:14.10.1
     steps:
       - checkout
-      - node/install-packages
-      - run:
-          command: npm test
-          name: Run tests
+      - node/install:
+          install-yarn: true
+      - run: node --version
 orbs:
   node: 'circleci/node@3.0.0' 
 version: 2.1
