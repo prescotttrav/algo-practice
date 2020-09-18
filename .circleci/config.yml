@@ -1,12 +1,13 @@
 jobs:
   test:
-    docker:
-      - image: node:current-alpine
+    executor:
+      name: node/default
+      tag: '14'
     steps:
       - checkout
       - run:
-        name: Run tests
-        command: npm test
+          command: npm test
+          name: Run tests
 orbs:
   node: 'circleci/node@3.0.0' 
 version: 2.1
