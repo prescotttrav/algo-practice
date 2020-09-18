@@ -4,4 +4,6 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - node/test
+      - run:
+          name: Run Tests
+          command: yarn test 
