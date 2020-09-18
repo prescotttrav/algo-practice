@@ -1,8 +1,7 @@
 jobs:
   test:
-    executor:
-      name: node/default
-      tag: '14'
+    docker: 
+      - image: cimg/node:14.10.1
     steps:
       - checkout
       - run:
