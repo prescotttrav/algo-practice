@@ -5,11 +5,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Install yarn
-        command: npm install yarn
-      - run:
         name: Run tests
-        command: yarn test
+        command: npm test
 orbs:
   node: 'circleci/node@3.0.0' 
 version: 2.1
