@@ -3,12 +3,17 @@ orbs:
   node: circleci/node@3.0.0
 jobs:
   test:
+    executor:
+      name: node/default
+      tag: '13'
     steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
       - run:
-        name: Test
-        command: yarn test
-
+          command: yarn test
+          name: Run YARN tests
 workflows:
-  tests:
+  test_my_algos:
     jobs:
       -test
