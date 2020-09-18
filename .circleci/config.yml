@@ -1,9 +1,14 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
-workflows:
-  node-tests:
-    jobs:
+jobs:
+  test:
+    steps:
       - run:
-          name: Run Tests
-          command: yarn test 
+        name: Test
+        command: yarn test
+
+workflows:
+  tests:
+    jobs:
+      -test
