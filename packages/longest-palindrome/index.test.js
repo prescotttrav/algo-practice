@@ -1,10 +1,14 @@
 import bruteForce from './brute-force';
+import dynamicProgramming from './dynamic-programming';
 
 describe('Test case 1', () => {
   const s = 'babad';
   const res = 'bab';
   it('brute force should return correctly', () => {
     expect(bruteForce(s)).toBe(res);
+  });
+  it('dynamic programming should return correctly', () => {
+    expect(dynamicProgramming(s)).toBe(res);
   });
 });
 describe('Test case 2', () => {
@@ -13,11 +17,17 @@ describe('Test case 2', () => {
   it('brute force should return correctly', () => {
     expect(bruteForce(s)).toBe(res);
   });
+  it('dynamic programming should return correctly', () => {
+    expect(dynamicProgramming(s)).toBe(res);
+  });
 });
 describe('Test case 3', () => {
   const s = 'abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc';
   const res = 'a';
   it('brute force should return correctly', () => {
     expect(bruteForce(s)).toBe(res);
+  });
+  it('dynamic programming should return correctly', () => {
+    expect(dynamicProgramming(s)).toBe(res);
   });
 });
