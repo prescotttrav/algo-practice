@@ -1,5 +1,6 @@
 import bruteForce from './brute-force';
 import dynamicProgramming from './dynamic-programming';
+import expandAroundCenter from './expand-around-center';
 
 describe('Test case 1', () => {
   const s = 'babad';
@@ -9,6 +10,9 @@ describe('Test case 1', () => {
   });
   it('dynamic programming should return correctly', () => {
     expect(dynamicProgramming(s)).toBe(res);
+  });
+  it('expand around center should return correctly', () => {
+    expect(expandAroundCenter(s)).toBe(res);
   });
 });
 describe('Test case 2', () => {
@@ -20,6 +24,9 @@ describe('Test case 2', () => {
   it('dynamic programming should return correctly', () => {
     expect(dynamicProgramming(s)).toBe(res);
   });
+  it('expand around center should return correctly', () => {
+    expect(expandAroundCenter(s)).toBe(res);
+  });
 });
 describe('Test case 3', () => {
   const s = 'abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc';
@@ -29,5 +36,8 @@ describe('Test case 3', () => {
   });
   it('dynamic programming should return correctly', () => {
     expect(dynamicProgramming(s)).toBe(res);
+  });
+  it('expand around center should return correctly', () => {
+    expect(expandAroundCenter(s)).toBe(res);
   });
 });

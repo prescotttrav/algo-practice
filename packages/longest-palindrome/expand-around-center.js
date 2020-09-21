@@ -1,6 +1,5 @@
 /**
- *
- * 
+ * Expand around center solution for finding longest palindrome in string.
  *
  * Time: O(n^2)
  * Space: O(n)
@@ -40,3 +39,5 @@ const longestPalindrome = (s) => {
     }
     return s.substring(longest[0], longest[1]);
 };
+
+export default longestPalindrome;
