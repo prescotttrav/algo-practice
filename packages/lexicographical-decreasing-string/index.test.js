@@ -9,4 +9,3 @@ test('Test case 2', () => {
 test('Test case 3', () => {
   expect(lexicoDecreasing('aaabbbccc')).toBeTruthy();
 });
-

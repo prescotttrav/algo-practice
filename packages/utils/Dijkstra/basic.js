@@ -6,8 +6,7 @@
 const getSmallest = (dist, visited) => {
   let min = [Infinity, null];
   for (const [node, d] of dist.entries()) {
-    if (d < min[0] && !visited.has(node))
-      min = [d, node];
+    if (d < min[0] && !visited.has(node)) min = [d, node];
   }
   return min[1];
 };
@@ -60,4 +59,3 @@ const determinePath = (map, N, start) => {
 };
 
 export default determinePath;
-

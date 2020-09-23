@@ -7,7 +7,7 @@ class Heap {
     let i = this.size;
     this.items[i] = val;
     while (i > 0) {
-      const parent = Math.floor((i - 1)/ 2);
+      const parent = Math.floor((i - 1) / 2);
       if (this.items[parent] > val) {
         this.swap(parent, i);
         i = parent;
@@ -55,4 +55,3 @@ class Heap {
 }
 
 export default Heap;
-

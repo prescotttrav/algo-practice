@@ -12,7 +12,7 @@ const findMaxProfit = (A) => {
   let maxVal = -Infinity;
   let start = 0;
   let end = 0;
-  
+
   for (let i = 0; i < A.length; i++) {
     for (let j = i + 1; j < A.length; j++) {
       const val = A[j] - A[i];
@@ -24,7 +24,6 @@ const findMaxProfit = (A) => {
     }
   }
   return [start, end, maxVal];
-}
+};
 
 export default findMaxProfit;
-

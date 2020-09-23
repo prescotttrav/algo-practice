@@ -8,10 +8,8 @@ class Queue {
   }
   add(val) {
     const node = new LinkedListNode(val);
-    if (!this.last)
-      this.head = node;
-    else
-      this.last.next = node;
+    if (!this.last) this.head = node;
+    else this.last.next = node;
     this.last = node;
     this.size++;
   }
@@ -19,8 +17,7 @@ class Queue {
     if (!this.head) return null;
     const node = this.head;
     this.head = this.head.next;
-    if (!this.head)
-      this.last = null;
+    if (!this.head) this.last = null;
     this.size--;
     return node.val;
   }

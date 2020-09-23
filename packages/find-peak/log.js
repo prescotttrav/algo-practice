@@ -21,4 +21,3 @@ const findPeak = (A) => {
 };
 
 export default findPeak;
-

@@ -16,7 +16,7 @@ class PriorityQueue {
     const l = 2 * index + 1;
     const r = l + 1;
     if (l < this.size && this.items[l] < this.items[index]) {
-      smallest = l; 
+      smallest = l;
     }
     if (r < this.size && this.items[r] < this.items[smallest]) {
       smallest = r;
@@ -63,4 +63,3 @@ class PriorityQueue {
 }
 
 export default PriorityQueue;
-

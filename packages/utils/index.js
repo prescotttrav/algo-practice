@@ -2,7 +2,7 @@
  * Returns random number greater than or equal to min & less than max.
  *
  * @param {number} min
- * @param {number} max 
+ * @param {number} max
  * @return {number}
  */
 export const randomNumber = (min, max) => {
@@ -29,4 +29,3 @@ export const swap = (A, i, j) => {
   }
   [A[i], A[j]] = [A[j], A[i]];
 };
-
