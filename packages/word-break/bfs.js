@@ -11,7 +11,7 @@ const wordBreak = (s, wordDict) => {
   const visited = new Array(s.length).fill(false);
   const q = new Queue();
   q.add(0);
-  
+
   while (!q.isEmpty()) {
     const start = q.remove();
     if (!visited[start]) {

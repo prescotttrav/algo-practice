@@ -15,6 +15,6 @@ const findPeak = (A) => {
     }
   }
   return -1;
-}
+};
 
 export default findPeak;

@@ -10,8 +10,12 @@ describe('Random number generator', () => {
     expect(value).toBeLessThan(5);
   });
   it('should throw error on invalid input', () => {
-    expect(() => { randomNumber(5, 1); }).toThrow(Error);
-    expect(() => { randomNumber(1, 1); }).toThrow(Error);
+    expect(() => {
+      randomNumber(5, 1);
+    }).toThrow(Error);
+    expect(() => {
+      randomNumber(1, 1);
+    }).toThrow(Error);
   });
 });
 describe('Swap array elements in place', () => {
@@ -21,7 +25,11 @@ describe('Swap array elements in place', () => {
     expect(A).toStrictEqual([3, 2, 1, 4]);
   });
   it('should throw error on invalid input', () => {
-    expect(() => { swap([1], 0, 1); }).toThrow(Error);
-    expect(() => { swap([1, 2, 3], 1, -1); }).toThrow(Error);
+    expect(() => {
+      swap([1], 0, 1);
+    }).toThrow(Error);
+    expect(() => {
+      swap([1, 2, 3], 1, -1);
+    }).toThrow(Error);
   });
 });

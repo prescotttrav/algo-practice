@@ -27,4 +27,3 @@ describe('Adding & removing to Queue', () => {
     expect(q.size).toBe(0);
   });
 });
-

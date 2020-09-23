@@ -10,7 +10,7 @@ const partition = (A, low, high) => {
   i++;
   [A[i], A[high]] = [A[high], A[i]];
   return i;
-}
+};
 const quicksort = (A, low, high) => {
   if (low < high) {
     const p = partition(A, low, high);
@@ -21,4 +21,3 @@ const quicksort = (A, low, high) => {
 };
 
 export default quicksort;
-

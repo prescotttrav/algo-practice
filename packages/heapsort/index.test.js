@@ -10,4 +10,3 @@ test('Test case 2', () => {
   heapsort(A);
   expect(A).toStrictEqual([17, 20, 26, 31, 44, 54, 55, 77, 93]);
 });
-

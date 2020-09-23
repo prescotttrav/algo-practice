@@ -5,7 +5,7 @@
  * Returns a start & end of subarray along with the subarray's summation.
  *
  * Time: O(n)
- * Space: O(1)  
+ * Space: O(1)
  */
 const findMaxProfit = (A) => {
   let low, high;
@@ -32,6 +32,6 @@ const findMaxProfit = (A) => {
     }
   }
   return [low, high, val];
-}
+};
 
 export default findMaxProfit;

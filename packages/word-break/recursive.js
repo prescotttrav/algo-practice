@@ -6,17 +6,15 @@
  */
 
 const wordBreakHelper = (s, set, start) => {
-  if (start === s.length)
-    return true;
+  if (start === s.length) return true;
   for (let end = start + 1; end <= s.length; end++) {
-    if (set.has(s.substring(start, end)) && wordBreakHelper(s, set, end))
-      return true;
+    if (set.has(s.substring(start, end)) && wordBreakHelper(s, set, end)) return true;
   }
   return false;
 };
 
 const wordBreak = (s, wordDict) => {
   return wordBreakHelper(s, new Set(wordDict), 0);
-}
+};
 
 export default wordBreak;

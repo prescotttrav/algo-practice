@@ -23,4 +23,3 @@ const lexicoDecreasing = (s) => {
 };
 
 export default lexicoDecreasing;
-

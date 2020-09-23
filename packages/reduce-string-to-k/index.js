@@ -27,4 +27,3 @@ const reduceStr = (S, k) => {
 };
 
 export default reduceStr;
-

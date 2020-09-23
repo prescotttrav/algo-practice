@@ -5,16 +5,13 @@
  * Space: O(n)
  */
 
-const wordBreakHelper= (s, set, start, memo) => {
-  if (start === s.length)
-    return true;
-  if (memo[start] !== undefined)
-    return memo[start];
+const wordBreakHelper = (s, set, start, memo) => {
+  if (start === s.length) return true;
+  if (memo[start] !== undefined) return memo[start];
   for (let end = start + 1; end <= s.length; end++) {
-    if (set.has(s.substring(start, end)) && wordBreakHelper(s, set, end, memo))
-      return memo[start] = true;
+    if (set.has(s.substring(start, end)) && wordBreakHelper(s, set, end, memo)) return (memo[start] = true);
   }
-  return memo[start] = false;
+  return (memo[start] = false);
 };
 
 const wordBreak = (s, wordDict) => {
