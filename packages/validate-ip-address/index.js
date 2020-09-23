@@ -55,5 +55,5 @@ const validIPAddress = function(IP) {
         return 'Neither'
 };
 
-export default validateIPAddress;
+export default validIPAddress;
 
