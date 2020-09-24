@@ -2,7 +2,7 @@
  * Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
  *
  * Time: O(n lg n)
- * Space: O(n lg n)
+ * Space: O(lg n)
  *
  * @param {number[]} nums
  * @param {number} low
