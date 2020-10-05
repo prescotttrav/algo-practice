@@ -1,5 +1,8 @@
 import radixSort from './index';
 
+test('Returns array', () => {
+  expect(radixSort([329, 457, 657, 839, 436, 720, 355])).toBeInstanceOf(Array);
+});
 test('Test case 1', () => {
   expect(radixSort([329, 457, 657, 839, 436, 720, 355])).toStrictEqual([329, 355, 436, 457, 657, 720, 839]);
 });
