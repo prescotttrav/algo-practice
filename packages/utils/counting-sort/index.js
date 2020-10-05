@@ -12,10 +12,8 @@ const countingSort = (A, k, j = 0) => {
   for (let i = 0; i < L; i++) {
     C[A[i] - j] = C[A[i] - j] + 1;
   }
-  let acc = 0;
-  for (let m = j; m <= k; m++) {
-    acc += C[m - j];
-    C[m - j] = acc;
+  for (let m = j + 1; m <= k; m++) {
+    C[m - j] = C[m - j] + C[m - j - 1];
   }
   for (let n = L - 1; n >= 0; n--) {
     B[C[A[n] - j] - 1] = A[n];
